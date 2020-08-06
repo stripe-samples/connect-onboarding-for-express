@@ -32,11 +32,7 @@ app.get("/", (req, res) => {
 
 app.post("/onboard-user", async (req, res) => {
   try {
-    const account = await stripe.accounts.create({
-      type: "express",
-      business_type: "individual",
-      country: "US"
-    });
+    const account = await stripe.accounts.create({type: "express"});
     req.session.accountID = account.id;
 
     const origin = `${req.headers.origin}`;
@@ -69,10 +65,10 @@ app.get("/onboard-user/refresh", async (req, res) => {
 
 function generateAccountLink(accountID, origin) {
   return stripe.accountLinks.create({
-    type: "onboarding",
+    type: "account_onboarding",
     account: accountID,
-    failure_url: `${origin}/onboard-user/refresh`,
-    success_url: `${origin}/success.html`,
+    refresh_url: `${origin}/onboard-user/refresh`,
+    return_url: `${origin}/success.html`,
   }).then((link) => link.url);
 }
 
