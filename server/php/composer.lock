@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3cf9aeac8aaa1704f254cd47f185b49f",
+    "content-hash": "89d4075440ebc15413ed051b4bf82b83",
     "packages": [
         {
             "name": "monolog/monolog",
@@ -647,16 +647,16 @@
         },
         {
             "name": "stripe/stripe-php",
-            "version": "v7.125.0",
+            "version": "v8.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stripe/stripe-php.git",
-                "reference": "822c00aa380c10c2a3c55d105c5da72ad577b7c4"
+                "reference": "b26b37850ef8772957b354239bef18f341dbf810"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/822c00aa380c10c2a3c55d105c5da72ad577b7c4",
-                "reference": "822c00aa380c10c2a3c55d105c5da72ad577b7c4",
+                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/b26b37850ef8772957b354239bef18f341dbf810",
+                "reference": "b26b37850ef8772957b354239bef18f341dbf810",
                 "shasum": ""
             },
             "require": {
@@ -701,9 +701,9 @@
             ],
             "support": {
                 "issues": "https://github.com/stripe/stripe-php/issues",
-                "source": "https://github.com/stripe/stripe-php/tree/v7.125.0"
+                "source": "https://github.com/stripe/stripe-php/tree/v8.1.0"
             },
-            "time": "2022-04-21T22:31:37+00:00"
+            "time": "2022-05-11T18:08:23+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
