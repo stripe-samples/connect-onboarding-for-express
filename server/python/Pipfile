@@ -6,7 +6,7 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-certifi = "==2019.3.9"
+certifi = "==2022.6.15"
 chardet = "==3.0.4"
 click = "==7.0"
 idna = "==2.8"
