@@ -1,8 +1,8 @@
 {
     "require": {
         "slim/slim": "^4.10",
-        "vlucas/phpdotenv": "^3.4",
-        "stripe/stripe-php": "^7.125",
+        "vlucas/phpdotenv": "^5.4",
+        "stripe/stripe-php": "^8.8",
         "monolog/monolog": "^2.5"
     },
     "scripts": {
