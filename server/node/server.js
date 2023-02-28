@@ -52,7 +52,7 @@ app.get("/onboard-user/refresh", async (req, res) => {
   }
   try {
     const {accountID} = req.session;
-    const origin = `${req.secure ? "https://" : "https://"}${req.headers.host}`;
+    const origin = `${req.secure ? "https://" : "http://"}${req.headers.host}`;
     
     const accountLinkURL = await generateAccountLink(accountID, origin)
     res.redirect(accountLinkURL);
